@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2c040d">
+  <meta name="description" content="A Double Celebration of Love & Brotherhood: Waleema Ceremony of Mr. & Mrs. Mohamed Shazni and Mr. & Mrs. Mohamed Shukry — Saturday, 26th December 2026, 8.00 PM at Islamic Cultural Hall, Gampola, Kandy.">
+  <title>Mohamed Shazni &amp; Mohamed Shukry | Royal Waleema Celebration</title>
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600;700;800;900&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="invitation-locked">
+
+  <!-- ========================================================
+       CREATIVE 3D ROYAL PALACE GATES OPENER
+       ======================================================== -->
+  <div class="royal-opener" id="royalOpener" role="dialog" aria-modal="true" aria-labelledby="openerTitle">
+    <div class="opener-backdrop" aria-hidden="true">
+      <div class="ambient-glow glow-top"></div>
+      <div class="ambient-glow glow-bottom"></div>
+      <div class="stars-layer"></div>
+    </div>
+
+    <!-- Hanging Moroccan Lanterns with Gentle Sway Physics -->
+    <div class="hanging-lanterns-wrapper" aria-hidden="true">
+      <div class="lantern lantern-left">
+        <div class="lantern-cord"></div>
+        <div class="lantern-body">
+          <div class="lantern-glow"></div>
+        </div>
+      </div>
+      <div class="lantern lantern-right">
+        <div class="lantern-cord"></div>
+        <div class="lantern-body">
+          <div class="lantern-glow"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gates-container">
+      <div class="opener-header">
+        <span class="royal-crown">❦</span>
+        <p class="opener-pretitle">The Auspicious Double Celebration</p>
+        <h2 class="opener-couple-name" id="openerTitle">Mohamed Shazni <small>&amp;</small> Mohamed Shukry</h2>
+        <p class="opener-date-tag">Joint Waleema · Saturday, 26 Dec 2026 · Gampola, Kandy</p>
+      </div>
+
+      <!-- 3D Velvet & Gold Palace Gates -->
+      <div class="palace-gates-box" id="gatesBox">
+        <!-- Left Palace Gate -->
+        <div class="palace-gate gate-left" id="gateLeft">
+          <div class="gate-inner">
+            <div class="mashrabiya-lattice"></div>
+            <div class="gate-arch-filigree"></div>
+            <div class="gate-handle handle-left"></div>
+          </div>
+        </div>
+
+        <!-- Right Palace Gate -->
+        <div class="palace-gate gate-right" id="gateRight">
+          <div class="gate-inner">
+            <div class="mashrabiya-lattice"></div>
+            <div class="gate-arch-filigree"></div>
+            <div class="gate-handle handle-right"></div>
+          </div>
+        </div>
+
+        <!-- Center Golden Wax Medallion (Interactive Unveil Button) -->
+        <button class="wax-seal-button" id="unveilButton" type="button" aria-label="Open wedding palace gates and begin celebration experience">
+          <span class="seal-glow"></span>
+          <span class="seal-outer-rim">
+            <svg class="seal-rim-svg" viewBox="0 0 100 100">
+              <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+              <text font-size="7.2" fill="#d4af37" letter-spacing="2">
+                <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
+                  • WALEEMA CEREMONY • GAMPOLA •
+                </textPath>
+              </text>
+            </svg>
+          </span>
+          <span class="seal-body">
+            <span class="seal-arabic">بِسْمِ ٱللَّٰهِ</span>
+            <span class="seal-monogram">S <small>&amp;</small> S</span>
+            <span class="seal-stars">✦ ✦ ✦</span>
+          </span>
+          <span class="seal-instruction">
+            <span class="instruction-title">Tap to Enter</span>
+            <span class="instruction-sub">Music starts upon opening</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Falling Burgundy Velvet Rose Petals & Golden Stardust Canvas -->
+  <canvas class="particles-canvas" id="particlesCanvas" aria-hidden="true"></canvas>
+
+  <!-- Floating Audio Player Bar -->
+  <div class="floating-audio-bar" id="audioBarContainer">
+    <button class="music-toggle-btn" id="musicToggleBtn" type="button" aria-label="Toggle background music" aria-pressed="false">
+      <div class="equalizer-bars" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <span class="music-btn-text" id="musicBtnText">Music On</span>
+    </button>
+  </div>
+
+  <!-- Background Ambient Audio -->
+  <audio id="bgMusic" loop preload="auto" playsinline>
+    <source src="assets/wedding-ambient.wav" type="audio/wav">
+  </audio>
+
+  <!-- ========================================================
+       MAIN IMMERSIVE CELEBRATION SUITE (CREATIVE & CARD-LESS)
+       ======================================================== -->
+  <main class="main-wrapper">
+
+    <!-- HERO PALACE PAVILION -->
+    <header class="hero-section">
+      <div class="hero-decorative-frame" aria-hidden="true">
+        <span class="corner corner-tl"></span>
+        <span class="corner corner-tr"></span>
+        <span class="corner corner-bl"></span>
+        <span class="corner corner-br"></span>
+      </div>
+
+      <div class="spiritual-blessing reveal">
+        <p class="arabic-bismillah" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+        <p class="bismillah-translation">“IN THE NAME OF ALLAH, THE MOST GRACIOUS &amp; THE MOST MERCIFUL”</p>
+        <div class="gold-crest-divider" aria-hidden="true">
+          <span class="crest-line"></span>
+          <span class="crest-gem">❦</span>
+          <span class="crest-line"></span>
+        </div>
+      </div>
+
+      <div class="invitation-intro reveal">
+        <p class="section-kicker">A Sacred Double Celebration of Brotherhood &amp; Love</p>
+        <h1 class="invitation-heading">Waleema Ceremony</h1>
+        <div class="in-shaa-allah-pill">
+          <span class="pill-sparkle">✦</span>
+          <span>IN SHAA ALLAH</span>
+          <span class="pill-sparkle">✦</span>
+        </div>
+        <p class="invitation-subtext">
+          With immense joy and gratitude in their hearts,<br>
+          <strong>Mr. &amp; Mrs. Al Haj &amp; Hajiyani Mohamed Shareef</strong><br>
+          warmly request the pleasure of your graceful presence to celebrate the auspicious Waleema ceremony of their beloved sons
+        </p>
+      </div>
+
+      <!-- ========================================================
+           CREATIVE ARCHITECTURAL DUAL-PAVILION (MOHAMED SHAZNI & MOHAMED SHUKRY)
+           ======================================================== -->
+      <div class="dual-pavilion-grid reveal">
+
+        <!-- Wing 1: Mohamed Shazni -->
+        <article class="pavilion-arch-card wing-shazni">
+          <div class="arch-top-crown">
+            <div class="arch-silhouette"></div>
+            <div class="monogram-crest">
+              <span class="crest-letters">MS</span>
+            </div>
+          </div>
+          <div class="arch-content">
+            <span class="groom-badge">The Groom</span>
+            <p class="groom-salutation">MR. &amp; MRS.</p>
+            <h2 class="groom-fullname">MOHAMED SHAZNI</h2>
+            <div class="gold-ornament-line"></div>
+            <div class="lineage-wrapper">
+              <div class="lineage-block">
+                <span class="lineage-title">Son of</span>
+                <p class="lineage-name">Mr. &amp; Mrs. Al Haj &amp; Hajiyani Mohamed Shareef</p>
+              </div>
+              <div class="lineage-connector">
+                <span class="connector-flourish">❦</span>
+                <span class="connector-phrase">And Daughter of</span>
+                <span class="connector-flourish">❦</span>
+              </div>
+              <div class="lineage-block">
+                <p class="lineage-name">Mr. &amp; Mrs. Kaja Rauff Hameed</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Central Symmetrical Islamic Archway & Brotherhood Pillar -->
+        <div class="brotherhood-center-pillar">
+          <div class="pillar-line top-line"></div>
+          <div class="brotherhood-emblem">
+            <div class="emblem-inner">
+              <span class="emblem-amp">&amp;</span>
+            </div>
+            <span class="emblem-tag">Two Brothers · Two Unions</span>
+          </div>
+          <div class="pillar-line bottom-line"></div>
+        </div>
+
+        <!-- Wing 2: Mohamed Shukry -->
+        <article class="pavilion-arch-card wing-shukry">
+          <div class="arch-top-crown">
+            <div class="arch-silhouette"></div>
+            <div class="monogram-crest">
+              <span class="crest-letters">MS</span>
+            </div>
+          </div>
+          <div class="arch-content">
+            <span class="groom-badge">The Groom</span>
+            <p class="groom-salutation">MR. &amp; MRS.</p>
+            <h2 class="groom-fullname">MOHAMED SHUKRY</h2>
+            <div class="gold-ornament-line"></div>
+            <div class="lineage-wrapper">
+              <div class="lineage-block">
+                <span class="lineage-title">Son of</span>
+                <p class="lineage-name">Mr. &amp; Mrs. Al Haj &amp; Hajiyani Mohamed Shareef</p>
+              </div>
+              <div class="lineage-connector">
+                <span class="connector-flourish">❦</span>
+                <span class="connector-phrase">And Daughter of</span>
+                <span class="connector-flourish">❦</span>
+              </div>
+              <div class="lineage-block">
+                <p class="lineage-name">Mr. &amp; Mrs. Al Haj &amp; Hajiyani Mohamed Nuhman</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="scroll-indicator reveal">
+        <span class="scroll-text">Explore Itinerary, Countdown &amp; Blessings</span>
+        <span class="scroll-chevron">⌄</span>
+      </div>
+    </header>
+
+    <!-- ========================================================
+         CREATIVE FEATURE 1: CELEBRATION TIMELINE & ITINERARY
+         ======================================================== -->
+    <section class="itinerary-section" aria-labelledby="itineraryHeader">
+      <div class="section-container reveal">
+        <div class="section-title-wrap">
+          <p class="script-accent">Flow of the Evening</p>
+          <h2 id="itineraryHeader" class="luxury-title">Celebration Program</h2>
+          <div class="gold-crest-divider" aria-hidden="true">
+            <span class="crest-line"></span>
+            <span class="crest-gem">✦</span>
+            <span class="crest-line"></span>
+          </div>
+          <p class="section-subtitle">Saturday, 26th December 2026 · An evening of hospitality &amp; barakah</p>
+        </div>
+
+        <!-- Interactive Program Timeline -->
+        <div class="program-timeline">
+          <!-- Item 1: 8:00 PM -->
+          <div class="timeline-item">
+            <div class="timeline-time-badge">
+              <span class="time-main">8:00 PM</span>
+              <span class="time-sub">Onwards</span>
+            </div>
+            <div class="timeline-node">
+              <span class="node-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="program-title">Arrival &amp; Cordial Welcome</h3>
+              <p class="program-desc">Welcoming our honored family and distinguished guests with traditional cordial hospitality, rosewater fragrance, and refreshments at the Grand Foyer.</p>
+            </div>
+          </div>
+
+          <!-- Item 2: 8:30 PM -->
+          <div class="timeline-item">
+            <div class="timeline-time-badge">
+              <span class="time-main">8:30 PM</span>
+              <span class="time-sub">Ceremony</span>
+            </div>
+            <div class="timeline-node">
+              <span class="node-dot"></span>
+            </div>
+            <div class="timeline-card highlight-card">
+              <h3 class="program-title">Grand Entrance of the Grooms</h3>
+              <p class="program-desc">Celebratory entrance of <strong>Mr. &amp; Mrs. Mohamed Shazni</strong> and <strong>Mr. &amp; Mrs. Mohamed Shukry</strong> into the ceremonial hall accompanied by family greetings.</p>
+            </div>
+          </div>
+
+          <!-- Item 3: 9:00 PM -->
+          <div class="timeline-item">
+            <div class="timeline-time-badge">
+              <span class="time-main">9:00 PM</span>
+              <span class="time-sub">Dinner</span>
+            </div>
+            <div class="timeline-node">
+              <span class="node-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="program-title">The Royal Waleema Feast</h3>
+              <p class="program-desc">A sumptuous traditional banquet served in celebration of this joyous double union, featuring authentic delicacies and culinary delights.</p>
+            </div>
+          </div>
+
+          <!-- Item 4: 10:15 PM -->
+          <div class="timeline-item">
+            <div class="timeline-time-badge">
+              <span class="time-main">10:15 PM</span>
+              <span class="time-sub">Blessings</span>
+            </div>
+            <div class="timeline-node">
+              <span class="node-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <h3 class="program-title">Du'a &amp; Felicitation</h3>
+              <p class="program-desc">Collective prayers for the couples' prosperity, lifelong love, and barakah, followed by heartfelt congratulations and commemorative photo moments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CREATIVE FEATURE 2: AUSPICIOUS LIVE COUNTDOWN DIALS
+         ======================================================== -->
+    <section class="countdown-section" aria-labelledby="countdownHeader">
+      <div class="section-container reveal">
+        <div class="section-title-wrap">
+          <p class="script-accent">Every moment is blessed</p>
+          <h2 id="countdownHeader" class="luxury-title">The Auspicious Countdown</h2>
+          <div class="gold-crest-divider" aria-hidden="true">
+            <span class="crest-line"></span>
+            <span class="crest-gem">✦</span>
+            <span class="crest-line"></span>
+          </div>
+          <p class="countdown-target-phrase">Counting down to Saturday, 26th December 2026 at 8:00 PM</p>
+        </div>
+
+        <!-- 4-Unit Glass Countdown Grid -->
+        <div class="countdown-grid" id="countdownTimer" role="timer" aria-live="polite">
+          <div class="countdown-dial">
+            <div class="dial-shimmer"></div>
+            <span class="countdown-number" id="daysVal">000</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-colon" aria-hidden="true">:</div>
+          <div class="countdown-dial">
+            <div class="dial-shimmer"></div>
+            <span class="countdown-number" id="hoursVal">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-colon" aria-hidden="true">:</div>
+          <div class="countdown-dial">
+            <div class="dial-shimmer"></div>
+            <span class="countdown-number" id="minutesVal">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-colon" aria-hidden="true">:</div>
+          <div class="countdown-dial">
+            <div class="dial-shimmer"></div>
+            <span class="countdown-number" id="secondsVal">00</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+
+        <p class="celebration-status-msg" id="statusMessage"></p>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CREATIVE FEATURE 3: VENUE DESTINATION & GUEST CONCIERGE
+         ======================================================== -->
+    <section class="event-details-section" aria-labelledby="eventDetailsHeader">
+      <div class="section-container reveal">
+        <div class="section-title-wrap">
+          <p class="script-accent">Honour us with your presence</p>
+          <h2 id="eventDetailsHeader" class="luxury-title">Ceremony &amp; Venue Details</h2>
+          <div class="gold-crest-divider" aria-hidden="true">
+            <span class="crest-line"></span>
+            <span class="crest-gem">❦</span>
+            <span class="crest-line"></span>
+          </div>
+        </div>
+
+        <div class="details-cards-grid">
+          <!-- Date Card -->
+          <article class="detail-card">
+            <div class="detail-icon-circle">
+              <svg viewBox="0 0 24 24" class="svg-detail-icon" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3 class="card-heading">Auspicious Date</h3>
+            <p class="card-highlight">Saturday</p>
+            <p class="card-body">26th of December 2026</p>
+          </article>
+
+          <!-- Time Card -->
+          <article class="detail-card">
+            <div class="detail-icon-circle">
+              <svg viewBox="0 0 24 24" class="svg-detail-icon" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="card-heading">Ceremony Time</h3>
+            <p class="card-highlight">8.00 P.M</p>
+            <p class="card-body">Onwards to Waleema Banquet</p>
+          </article>
+
+          <!-- Venue Card -->
+          <article class="detail-card">
+            <div class="detail-icon-circle">
+              <svg viewBox="0 0 24 24" class="svg-detail-icon" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="card-heading">Venue</h3>
+            <p class="card-highlight">Islamic Cultural Hall</p>
+            <p class="card-body">Gampola, Kandy, Sri Lanka</p>
+          </article>
+        </div>
+
+        <!-- Guest Guidance Notes (Creative Concierge) -->
+        <div class="guest-guide-pills">
+          <div class="guide-pill">
+            <span class="guide-icon">👔</span>
+            <div class="guide-text">
+              <strong>Dress Code</strong>
+              <span>Festive Traditional / Smart Formal</span>
+            </div>
+          </div>
+          <div class="guide-pill">
+            <span class="guide-icon">🍽️</span>
+            <div class="guide-text">
+              <strong>Hospitality</strong>
+              <span>Halal Gourmet Wedding Feast</span>
+            </div>
+          </div>
+          <div class="guide-pill">
+            <span class="guide-icon">🚗</span>
+            <div class="guide-text">
+              <strong>Accessibility</strong>
+              <span>Centrally located in Gampola Town</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Venue Navigation & Calendar Actions -->
+        <div class="action-buttons-group">
+          <!-- Google Maps Directions -->
+          <a
+            class="luxury-cta primary-cta"
+            href="https://www.google.com/maps/search/?api=1&query=Islamic+Cultural+Hall+Gampola+Kandy+Sri+Lanka"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 24 24" class="cta-svg" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+            </svg>
+            <span>Get Directions (Google Maps)</span>
+          </a>
+
+          <!-- Add to Calendar (.ics download) -->
+          <button class="luxury-cta secondary-cta" id="addToCalBtn" type="button">
+            <svg viewBox="0 0 24 24" class="cta-svg" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+              <path d="M12 14v4"></path>
+              <path d="M10 16h4"></path>
+            </svg>
+            <span>Add to Apple / Outlook Calendar</span>
+          </button>
+
+          <!-- Google Calendar Web Link -->
+          <a
+            class="luxury-cta secondary-cta"
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Waleema+Ceremony%3A+Mohamed+Shazni+%26+Mohamed+Shukry&dates=20261226T143000Z/20261226T183000Z&details=Joint+Waleema+Ceremony+of+Mr.+%26+Mrs.+Mohamed+Shazni+and+Mr.+%26+Mrs.+Mohamed+Shukry.+Islamic+Cultural+Hall%2C+Gampola%2C+Kandy.&location=Islamic+Cultural+Hall%2C+Gampola%2C+Kandy%2C+Sri+Lanka"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg viewBox="0 0 24 24" class="cta-svg" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            <span>Google Calendar</span>
+          </a>
+
+          <!-- Share Invitation -->
+          <button class="luxury-cta secondary-cta" id="shareInviteBtn" type="button">
+            <svg viewBox="0 0 24 24" class="cta-svg" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+            <span>Share Invitation</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         CREATIVE FEATURE 4: INTERACTIVE VIRTUAL GUESTBOOK & BLESSINGS WALL
+         ======================================================== -->
+    <section class="guestbook-section" aria-labelledby="guestbookHeader">
+      <div class="section-container reveal">
+        <div class="section-title-wrap">
+          <p class="script-accent">Leave Your Heartfelt Du'a</p>
+          <h2 id="guestbookHeader" class="luxury-title">Interactive Blessings Wall</h2>
+          <div class="gold-crest-divider" aria-hidden="true">
+            <span class="crest-line"></span>
+            <span class="crest-gem">✦</span>
+            <span class="crest-line"></span>
+          </div>
+          <p class="section-subtitle">Leave your prayers for Mohamed Shazni, Mohamed Shukry &amp; their families</p>
+        </div>
+
+        <div class="guestbook-container">
+          <!-- Form to Add Blessing -->
+          <form class="guestbook-form" id="guestbookForm">
+            <div class="form-row">
+              <input type="text" id="guestName" class="form-input" placeholder="Your Name or Family Name" required>
+            </div>
+
+            <!-- Preset Blessing Tags -->
+            <div class="blessing-tags-selector">
+              <span class="tags-hint">Select a Blessing:</span>
+              <div class="tags-list">
+                <button type="button" class="tag-btn active" data-msg="Barakallahu Lakuma Wa Baraka 'Alaykuma! May Allah unite you both in goodness.">🤲 Barakallahu Lakuma</button>
+                <button type="button" class="tag-btn" data-msg="Heartiest congratulations to both couples! May your marriages be filled with endless joy and harmony.">💐 Joy &amp; Harmony</button>
+                <button type="button" class="tag-btn" data-msg="Mabrook Shazni &amp; Shukry! Wishing both couples a lifetime of blessed togetherness.">✨ Lifetime of Barakah</button>
+                <button type="button" class="tag-btn" data-msg="Hearty congratulations to Mr. &amp; Mrs. Mohamed Shareef on this glorious double celebration!">🎉 Double Congratulations</button>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <textarea id="guestMessage" class="form-textarea" rows="3" placeholder="Personal message or Du'a for the couples..."></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="post-blessing-btn">
+                <span>Post Blessing to Wall</span>
+                <span class="btn-sparkle">✨</span>
+              </button>
+            </div>
+          </form>
+
+          <!-- Live Feed of Guest Blessings -->
+          <div class="blessings-board" id="blessingsBoard">
+            <!-- Dynamic blessings inserted via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================
+         SPIRITUAL DU'A & WHATSAPP GREETINGS
+         ======================================================== -->
+    <section class="wishes-section">
+      <div class="section-container reveal">
+        <div class="wishes-card">
+          <span class="wishes-crest">🤲</span>
+          <h2 class="wishes-heading">A Sacred Prayer For The Couples</h2>
+          <p class="arabic-dua" lang="ar" dir="rtl">بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
+          <p class="dua-phonetic">“BARAKALLAHU LAKUMA WA BARAKA 'ALAYKUMA, WA JAMA'A BAYNAKUMA FI KHAYR.”</p>
+          <p class="dua-translation">“May Allah bless you both and shower His blessings upon you both, and unite you both in goodness.”</p>
+          
+          <div class="wishes-cta-wrap">
+            <a
+              class="whatsapp-wish-btn"
+              href="https://wa.me/?text=Assalamu%20Alaikum!%20Heartiest%20Congratulations%20to%20Mr.%20%26%20Mrs.%20Mohamed%20Shazni%20and%20Mr.%20%26%20Mrs.%20Mohamed%20Shukry%20on%20your%20Waleema%20Ceremony!%20Barakallahu%20Lakuma%20Wa%20Baraka%20'Alaykuma%20Wa%20Jama'a%20Baynakuma%20Fi%20Khayr."
+              target="_blank"
+              rel="noopener"
+            >
+              <svg viewBox="0 0 24 24" class="whatsapp-svg" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"/>
+              </svg>
+              <span>Send Wishes to the Families on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================
+       INKSPIRE PRINTS & DIMENSION BRANDED FOOTER
+       ======================================================== -->
+  <footer class="business-footer" aria-label="Wedding services by Inkspire Prints and Dimension">
+    <div class="footer-container">
+      <div class="footer-intro reveal">
+        <span class="footer-ornament">❦</span>
+        <p class="footer-kicker">Crafted With Perfection</p>
+        <h2 class="footer-title">Wedding Experiences by Inkspire Prints &amp; Dimension</h2>
+        <p class="footer-subtitle">Transforming sacred celebrations into timeless keepsakes with bespoke printing, luxury acrylic framing, photoshoots, and interactive digital invitations.</p>
+      </div>
+
+      <div class="brand-cards-grid">
+        <!-- Inkspire Prints Card -->
+        <article class="brand-card inkspire-card reveal">
+          <div class="brand-header">
+            <img class="brand-logo inkspire-logo-img" src="assets/inkspire-white.png" alt="Inkspire Prints Logo">
+          </div>
+          <p class="brand-mission">Premium wedding invitation printing &amp; live digital wedding experiences designed to captivate your guests.</p>
+          <div class="service-tags">
+            <span class="service-pill">Wedding Invitation Printing</span>
+            <span class="service-pill">Live Invitation Websites</span>
+            <span class="service-pill">Luxury Wedding Albums</span>
+            <span class="service-pill">Wedding Photoshoots</span>
+            <span class="service-pill">Fine Art Photo Prints</span>
+          </div>
+        </article>
+
+        <!-- Dimension Card -->
+        <article class="brand-card dimension-card reveal">
+          <div class="brand-header dimension-brand-header">
+            <img class="brand-logo dimension-logo-img" src="assets/dimension-white.png" alt="Dimension - Powered by Inkspire Prints">
+          </div>
+          <p class="brand-mission">Exquisite handcrafted frames, Nikah contract displays, and personalized keepsake artistry.</p>
+          <div class="service-tags">
+            <span class="service-pill">Nikah Keepsake Frames</span>
+            <span class="service-pill">Money Gift Frames</span>
+            <span class="service-pill">Custom Photo Frames</span>
+            <span class="service-pill">Personalised Canvas &amp; Posters</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Quick Contact & Studio Information -->
+      <div class="contact-card reveal">
+        <div class="contact-links-grid">
+          <a class="contact-item" href="tel:+94702949758" aria-label="Call Inkspire Prints">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div class="contact-meta">
+              <span class="meta-label">Call / WhatsApp</span>
+              <strong class="meta-value">+94 70 29 49 758</strong>
+            </div>
+          </a>
+
+          <a class="contact-item" href="https://www.google.com/maps/search/?api=1&query=10%2F3+Kandy+Road+Gelioya+20620" target="_blank" rel="noopener" aria-label="Visit Inkspire Prints in Gelioya">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="contact-meta">
+              <span class="meta-label">Visit Our Studio</span>
+              <strong class="meta-value">10/3 Kandy Road, Gelioya 20620</strong>
+            </div>
+          </a>
+
+          <a class="contact-item whatsapp-highlight" href="https://wa.me/94702949758?text=Hello%20Inkspire%20Prints%2C%20I%20would%20like%20to%20enquire%20about%20your%20digital%20wedding%20experiences%20and%20printing%20services." target="_blank" rel="noopener">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.01-1.24-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.12-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.3z"/>
+              </svg>
+            </div>
+            <div class="contact-meta">
+              <span class="meta-label">Chat Directly</span>
+              <strong class="meta-value">Enquire on WhatsApp</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright-text">Mohamed Shazni <span class="heart">❦</span> Mohamed Shukry · 26 December 2026</p>
+        <p class="credit-text">Digital Wedding Experience crafted with elegance by <strong>Inkspire Prints</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <noscript>
+    <div class="noscript-banner">
+      Please enable JavaScript to view the interactive countdown, ambient music, and celebration experience.
+    </div>
+  </noscript>
+
+  <script src="script.js"></script>
+</body>
+</html>
